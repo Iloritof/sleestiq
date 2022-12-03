@@ -1,0 +1,120 @@
+.nav--primary {
+  --gap: 17rem;
+  position: fixed;
+  width: 100%;
+  padding: 2.3rem;
+  z-index: 1000;
+}
+
+.nav--bg {
+  background-color: hsl(var(--clr-blue-dark) / 0.9);
+}
+
+@supports (backdrop-filter: blur(1.5rem)) {
+  .nav--bg {
+    background-color: hsl(var(--clr-white) / 0.25);
+    backdrop-filter: blur(1.5rem);
+  }
+}
+
+.nav__menu {
+  --gap: 6.4rem;
+  list-style: none;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8rem 0rem;
+}
+
+.nav__menu a:hover {
+  border-bottom: solid 2px currentColor;
+}
+
+.nav__menu .active {
+  font-weight: 700;
+}
+
+.nav__toggle {
+  align-self: center;
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+.nav__toggle > * {
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 46.875em) {
+  .nav--primary {
+    --gap: 0rem;
+  }
+
+  .nav--primary > div {
+    justify-content: space-between;
+  }
+
+  .nav__logo {
+    height: 4rem;
+  }
+
+  .nav__toggle {
+    display: inline-block;
+    z-index: 10;
+  }
+
+  .nav__toggle > *:first-child {
+    transform-origin: center;
+  }
+
+  .nav__toggle > *:last-child {
+    transform-origin: center;
+  }
+
+  .nav__toggle[data-toggle='true'] > * {
+    display: none;
+  }
+
+  .nav__toggle[data-toggle='true'] > *:first-child {
+    display: block;
+    rotate: 45deg;
+    translate: 0px 4px;
+  }
+
+  .nav__toggle[data-toggle='true'] > *:last-child {
+    display: block;
+    rotate: -45deg;
+    translate: 0px -4px;
+  }
+
+  .nav--primary .nav__menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* display: none; */
+    /* scale: 1 0; */
+    translate: 0 -100%;
+    transition: translate 500ms ease-in;
+  }
+
+  .nav__menu[aria-expanded='true'] {
+    /* display: flex; */
+    translate: 0;
+  }
+
+  @supports (backdrop-filter: blur(1.5rem)) {
+    .nav__menu {
+      background-color: hsl(var(--clr-white) / 0.25);
+      backdrop-filter: blur(1.5rem);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.img-text {
+  --bleed: 2.5rem 3.2rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .img-text {
+    position: static;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.67bc7a2d.css",
+    "main.js": "/static/js/main.133f95a3.js",
+    "static/media/shop.jpg": "/static/media/shop.7afa02611ff93cd94cac.jpg",
+    "static/media/sleeping.jpg": "/static/media/sleeping.5f6cd0c1c1837fc9288a.jpg",
+    "static/media/hero.jpg": "/static/media/hero.536a43941d4da9dfeeee.jpg",
+    "static/media/about.jpg": "/static/media/about.8143133b10b1cda094f6.jpg",
+    "static/media/vape-pen.png": "/static/media/vape-pen.15bc156a2bb4a8173fb5.png",
+    "static/media/object.png": "/static/media/object.8b9dbe0b8e3be64500fb.png",
+    "static/media/logo.svg": "/static/media/logo.695495801fe02b1284c8e1225cf2343b.svg",
+    "static/media/logo-alt.svg": "/static/media/logo-alt.fab9843942069a4580a3de0aebee29ae.svg",
+    "static/media/sleep-review-logo.jpg": "/static/media/sleep-review-logo.e6f7d428261fdb1c9103.jpg",
+    "static/media/influencive-logo.jpg": "/static/media/influencive-logo.b4002a1915d81c4798b1.jpg",
+    "static/media/google-logo.jpg": "/static/media/google-logo.5ced083f3928e78e642a.jpg",
+    "index.html": "/index.html",
+    "main.67bc7a2d.css.map": "/static/css/main.67bc7a2d.css.map",
+    "main.133f95a3.js.map": "/static/js/main.133f95a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67bc7a2d.css",
+    "static/js/main.133f95a3.js"
+  ]
+}

@@ -1,0 +1,50 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media screen and (min-width: 62.5em) {
+  .grid-container--1 {
+    grid-template-columns:
+      minmax(1rem, 1fr) minmax(0px, var(--max-width))
+      minmax(1rem, 1fr);
+  }
+
+  .grid-container--2 {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      repeat(var(--col, 2), minmax(0px, calc(var(--max-width) / var(--col, 2))))
+      minmax(1rem, 1fr);
+  }
+
+  .grid-container > *:where(:first-child) {
+    grid-column: 2;
+  }
+
+  .grid-container > *:where(:not(:first-child)) {
+    grid-column: 3;
+    justify-self: right;
+  }
+
+  .grid-container :where(.span) {
+    grid-column: var(--grid-span);
+  }
+}
+
+@media screen and (max-width: 62.49em) {
+  .grid-container {
+    place-items: center;
+    text-align: center;
+    gap: 7.5rem;
+  }
+
+  .grid-container > * {
+    grid-column: 1 / 2;
+    width: 100%;
+  }
+}
+
+.grid-container > .halign {
+  justify-self: var(--halign);
+}

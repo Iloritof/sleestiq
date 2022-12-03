@@ -1,0 +1,69 @@
+header {
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  padding: 7.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero-img {
+  width: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__text {
+  position: relative;
+  z-index: 1;
+  --flow-space: 1.6rem;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.fix {
+  width: 100%;
+}
+
+@media screen and (min-width: 75em) {
+  header {
+    aspect-ratio: 2.4;
+  }
+
+  .large {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  header {
+    height: 45rem;
+  }
+
+  .large {
+    height: 60rem;
+  }
+
+  .hero-img {
+    height: 120%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+  header {
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .header__text {
+    text-align: center;
+    width: 100%;
+  }
+}

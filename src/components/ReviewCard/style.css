@@ -1,0 +1,6 @@
+.review-card {
+  aspect-ratio: '3 / 2';
+  width: '30rem';
+  display: inline-block;
+  flex: 0 0 30rem;
+}
